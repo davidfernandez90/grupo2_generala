@@ -1,6 +1,9 @@
 # Funciones del módulo turnos.py
 import os
 import time
+from Modulo_Dado import lanzar_dados , mostrar_dados
+from modulo_puntajes import verificar_combinaciones
+import random
 def jugar_turno(jugador, usadas):
     dados = lanzar_dados()
     mostrar_dados(dados)
