@@ -2,11 +2,8 @@ import random
 import time
 import os
 import pickle
-from módulo_puntajes import verificar_combinaciones
-from modulo_turnos import jugar_turno
-from modulo_juegos import mostrar_puntajes , jugar_generala
+from modulo_juegos import jugar_generala
 from Módulo_utilidades import validar_numero
-from Modulo_Dado import lanzar_dados , mostrar_dados , obtener_frecuencias
 from modulo_jugadores import crear_jugadores
 
 # Archivo principal
