@@ -1,4 +1,12 @@
-# Archivo principal main.py
+import random
+import time
+import os
+import pickle
+from modulo_juegos import jugar_generala
+from Módulo_utilidades import validar_numero
+from modulo_jugadores import crear_jugadores
+
+# Archivo principal
 def guardar_estado(filename, estado):
     with open(filename, 'wb') as file:
         pickle.dump(estado, file)
@@ -9,10 +17,7 @@ def cargar_estado(filename):
     
 def main():
     os.system('cls')
-    texto= '                         Bienvenidos a la generala'
-    for letra in texto:
-        print(letra, end='', flush=True)
-        time.sleep(0.1)
+    print("                         Bienvenidos a la generala")    
     time.sleep(1)
     os.system('cls')
 
