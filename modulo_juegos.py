@@ -1,4 +1,12 @@
+
 # Funciones del módulo juego.py
+import pickle
+from modulo_turnos import jugar_turno
+
+def guardar_estado(filename, estado):
+    with open(filename, 'wb') as file:
+        pickle.dump(estado, file)
+        
 import os
 def mostrar_puntajes(puntajes):
     print("Puntajes actuales:")
