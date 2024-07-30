@@ -1,4 +1,6 @@
 # Funciones del módulo turnos.py
+import os
+import time
 def jugar_turno(jugador, usadas):
     dados = lanzar_dados()
     mostrar_dados(dados)
