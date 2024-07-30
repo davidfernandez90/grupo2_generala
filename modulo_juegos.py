@@ -1,4 +1,5 @@
 # Funciones del módulo juego.py
+import os
 def mostrar_puntajes(puntajes):
     print("Puntajes actuales:")
     for jugador, puntaje in puntajes.items():
