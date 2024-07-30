@@ -1,4 +1,4 @@
-# Módulo dados.py
+# Módulo_dados.py
 
 def lanzar_dados(num_dados=5):
     return [random.randint(1, 6) for _ in range(num_dados)]
