@@ -1,4 +1,6 @@
 # Funciones del módulo puntajes
+from Modulo_Dado import obtener_frecuencias
+
 def verificar_combinaciones(dados, usadas):
     frecuencias = obtener_frecuencias(dados)
     valores = list(frecuencias.values())
