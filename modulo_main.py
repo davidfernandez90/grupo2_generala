@@ -2,11 +2,12 @@ import random
 import time
 import os
 import pickle
-import módulo_puntajes.py
-import modulo_turnos.py
-import modulo_juegos.py
-import Módulo_ultilidades.py
-import modulo dado.py
+from módulo_puntajes import verificar_combinaciones
+from modulo_turnos import jugar_turno
+from modulo_juegos import mostrar_puntajes , jugar_generala
+from Módulo_utilidades import validar_numero
+from Modulo_Dado import lanzar_dados , mostrar_dados , obtener_frecuencias
+from modulo_jugadores import crear_jugadores
 
 # Archivo principal
 def guardar_estado(filename, estado):
